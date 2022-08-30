@@ -1,14 +1,8 @@
 #include <stdio.h>
 
-int Sum_BE(int x, int y)
-{
-	int sum = x+y;
-
-	return sum;
-}
 
 
-int Find_BE_Point(int x, int y)
+unsigned long int Find_BE_Point(int x, int y)
 {
 	if(y > x)
 		return 1;
@@ -18,29 +12,30 @@ int Find_BE_Point(int x, int y)
 int main()
 {
 
-	int sum = 0 ;
+	unsigned long int sum = 0 ;
 	int a, b, c;
-	int i = 0;
-	int v = 0;
+	unsigned long int i = 0;
+	unsigned long int v = 0;
+	unsigned long int b1, c1;
 
 	scanf("%d", &a);
 	scanf("%d", &b);
 	scanf("%d", &c);
-	
-	if((a+b*2100000001) < c*2100000000)
-		printf("2100000001");
 		
-	else {
+	 
 		for(i = 0 ; i <2100000000; i++) {
-			c = c * i;
-			b = b * i;
-			v = Sum_BE(a, b);
-			if (Find_BE_Point(sum, c) == 1){
-				printf("%d", i);
-				break;
+			b1 = b * i;
+			c1 = c * i;
+			v = a+b1;
+			if (Find_BE_Point(v, c1) == 1){
+			printf("v : %ld a+b1 : %ld c1 : %ld a : %d b : %d b1: %ld c : %d \n", v, a+b1, c1, a, b, b1, c);
+				printf("%ld",i);
+				return 0; 
 			}
+			
 		}
-	}
+		printf("-1");
+	
 	return 0;
 }
 
