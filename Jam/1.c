@@ -6,17 +6,22 @@ int main()
 {
 	char a = '*';
 	char b = ' ';
+	int cnt = 0;
 
 	for(int i = 0; i < 5; i++)
 	{
-		for(int j = 5-i; j > 0; j--)
-			printf("%c", b);
-		for(int k = 0; k <i+1; k++)
-			printf("%c", a);
-		for(int z = 0; z < i; z++)
-			printf("%c", a);
-		sleep(1);
-		printf("\n");
+		system("clear");
+		for(int o = 0; o < cnt; o++)
+		{
+			for(int j = 5-o; j > 0; j--)
+				printf("%c", b);
+			for(int k = 0; k <o+1; k++)
+				printf("%c", a);
+			for(int z = 0; z < o; z++)
+				printf("%c", a);
+			printf("\n");
+		}
+		sleep(1); cnt++;
 	}	
 
 
