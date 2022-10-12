@@ -1,10 +1,16 @@
 #include <iostream>
+using namespace std;
 
-int main(){
+#include "Circle.h"
 
-std::cout << "Hello\n" << "첫번째 맛보기입니다.";
+int main() {
+	Circle donut;
+	double area = donut.getArea();
+	cout << "donut 면적은 ";
+	cout << area << endl;
 
-
-
-return 0;
+	Circle pizza(30);
+	area = pizza.getArea();
+	cout << "pizza 면적은 ";
+	cout << area << endl;
 }
