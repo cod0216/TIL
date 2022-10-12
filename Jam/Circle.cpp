@@ -9,7 +9,7 @@ Circle::Circle() {
 	cout << " 원 생성" << endl;
 }
 
-double Circle(int r) {
+Circle::Circle(int r) {
 	radius = r;
 	cout << "반지름 " << radius;
 	cout << "원 생성 " << endl;

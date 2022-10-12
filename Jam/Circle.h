@@ -1,5 +1,5 @@
 class Circle {
-prviate:
+private:
 	int radius;
 public:
 	Circle();
