@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+	int a;
+	cin >> a;
+
+	int array[a][a];
+	for (int i = 0; i < a; i++)
+		for(int j = 0; j < a; j++)
+			cin >> array[i][j];
+		
+	for (int i = 0; i < a; i++)
+		for(int j = 0; j < a; j++)
+			cout << array[i][j];
+
+	return 0;
+}

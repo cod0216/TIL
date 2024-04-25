@@ -1,0 +1,8 @@
+Enjoy Linux
+zsh: command not found: jl
+zsh: command not found: adsf
+#include <stdio.h>
+
+int main()
+{
+	int i;
